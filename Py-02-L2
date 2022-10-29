@@ -1,0 +1,14 @@
+#Basic Conditions
+#Lab Py-02-L3 introduces the "elif" statement. I've added it here.
+
+#these variables capture the user's name and age.
+name = (input("What is your name? "))
+age = int(input(f"How old are you, {name}? "))
+
+#If the user is over 21, greetings. If the user is 21, drink responsibly. Otherwise, admonishing statement.
+if age > 21:
+    print(f"Hi, {name}, get your drink on.")
+elif age == 21:
+    print("You're legal now. Drink responsibly.")
+else:
+    print(f"C'mon, {name}, you know better than that.")
