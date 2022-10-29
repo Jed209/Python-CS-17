@@ -1,0 +1,11 @@
+# Define the dictionary keys:values"
+ProtocolsDict = {"FTP": 21, "ftp": 21,  "DNS": 53, "dns": 53,  "RDP": 3389, "rdp": 3389, "SSH": 22, "ssh": 22}
+
+question = input("What protocol do you want to see a port number for? ")
+
+if question in ProtocolsDict.keys():
+    answer = ProtocolsDict[question]
+    print(f"The port number for {question} is {answer}")
+else:
+    print("That protocol was not found.")
+
