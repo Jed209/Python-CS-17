@@ -1,0 +1,10 @@
+num1 = int(input("Please enter a number: "))
+num2 = 0
+
+try:
+    div = num1/num2
+    print(div)
+except ZeroDivisionError:
+    print("I can't calculate this")
+except ValueError:
+    print("Something went wrong.")

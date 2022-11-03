@@ -3,7 +3,7 @@ ProtocolsDict = {"FTP": 21, "ftp": 21,  "DNS": 53, "dns": 53,  "RDP": 3389, "rdp
 
 question = input("What protocol do you want to see a port number for? ")
 
-if question in ProtocolsDict.keys():
+if question in ProtocolsDict.values():
     answer = ProtocolsDict[question]
     print(f"The port number for {question} is {answer}")
 else:
